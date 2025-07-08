@@ -13,9 +13,9 @@
 	</main>
 
 	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
+		<div class="container">
+			<p class="copyright">© 2025 Limo. All rights reserved.</p>
+		</div>
 	</footer>
 </div>
 
@@ -38,20 +38,14 @@
 	}
 
 	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
+		border-top: 1px solid #e5e7eb;
+		padding: 2rem 0;
+		background: white;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	.copyright {
+		color: #6b7280;
+		font-size: 0.875rem;
+		text-align: center;
 	}
 </style>
