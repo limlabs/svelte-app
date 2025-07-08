@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
+	import Icons from '$lib/components/ui/Icons.svelte';
 
 	const currentPath = $derived($page.url.pathname);
 </script>
@@ -9,8 +10,8 @@
 <div class="top-bar">
     <div class="container">
         <div class="contact-info">
-            <span>(555) 123-4567</span>
-            <span>info@limo.com</span>
+            <span class="inline-flex items-center gap-3 text-sm"><Icons type="phone" size={16} color="#2563eb" />(555) 123-4567</span>
+            <span class="inline-flex items-center gap-3 text-sm ml-6"><Icons type="mail" size={16} color="#2563eb" />info@limo.com</span>
         </div>
     </div>
 </div>

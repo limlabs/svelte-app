@@ -1,6 +1,7 @@
 <script lang="ts">
     import background from '$lib/images/background.jpg';
     import type { WhyChooseUsFeature } from '$lib/types';
+    import Icons from '$lib/components/ui/Icons.svelte';
 
     let isHovered = $state(false);
     let activeFeature = $state<number>(0);
@@ -55,8 +56,7 @@
                 </p>
                 <div class="button-group">
                     <button class="primary" onclick={onGetStartedClick}>
-                        Get Started
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                        <span class="inline-flex items-center">Get Started <Icons type="arrow-right" size={16} className="ml-3" /></span>
                     </button>
                     <button class="secondary">Learn More</button>
                 </div>
@@ -78,21 +78,21 @@
         <div class="feature-grid">
             <div class="feature-card">
                 <div class="icon-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <Icons size={24} color="#2563eb" />
                 </div>
                 <h3>Business Consulting</h3>
                 <p>Expert advice to optimize your business operations and increase profitability.</p>
                 <ul class="feature-list">
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Strategic planning</span>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Market analysis</span>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Performance optimization</span>
                     </li>
                 </ul>
@@ -101,21 +101,21 @@
 
             <div class="feature-card">
                 <div class="icon-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <Icons size={24} color="#2563eb" />
                 </div>
                 <h3>Process Automation</h3>
                 <p>Streamline your workflows with our cutting-edge automation solutions.</p>
                 <ul class="feature-list">
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Workflow optimization</span>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Custom automation tools</span>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Integration services</span>
                     </li>
                 </ul>
@@ -124,21 +124,21 @@
 
             <div class="feature-card">
                 <div class="icon-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <Icons size={24} color="#2563eb" />
                 </div>
                 <h3>Digital Transformation</h3>
                 <p>Transform your business with innovative digital solutions and strategies.</p>
                 <ul class="feature-list">
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Technology assessment</span>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Digital strategy development</span>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon-small"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <Icons size={16} color="#2563eb" />
                         <span>Implementation support</span>
                     </li>
                 </ul>
@@ -157,27 +157,27 @@
         </div>
         <div class="faq-grid">
             <div class="faq-item">
-                <button class="faq-question" onclick={() => activeQuestion = activeQuestion === 0 ? -1 : 0}>
+                <button class="faq-question inline-flex items-center justify-between w-full" onclick={() => activeQuestion = activeQuestion === 0 ? -1 : 0}>
                     <span>What services do you offer?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class={activeQuestion === 0 ? 'rotate-180' : ''}><path d="m18 15-6-6-6 6"/></svg>
+                    <Icons type="chevron-down" size={16} className={`transition-transform ${activeQuestion === 0 ? 'rotate-180' : ''}`} />
                 </button>
                 <div class="faq-answer" class:active={activeQuestion === 0}>
                     <p>We offer a comprehensive suite of business solutions including process automation, data analytics, cloud integration, and digital transformation services. Our solutions are designed to help businesses streamline operations and improve efficiency.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question" onclick={() => activeQuestion = activeQuestion === 1 ? -1 : 1}>
+                <button class="faq-question inline-flex items-center justify-between w-full" onclick={() => activeQuestion = activeQuestion === 1 ? -1 : 1}>
                     <span>How can I get started?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class={activeQuestion === 1 ? 'rotate-180' : ''}><path d="m18 15-6-6-6 6"/></svg>
+                    <Icons type="chevron-down" size={16} className={`transition-transform ${activeQuestion === 1 ? 'rotate-180' : ''}`} />
                 </button>
                 <div class="faq-answer" class:active={activeQuestion === 1}>
                     <p>Getting started is easy! Simply click the 'Get Started' button above or contact our team. We'll schedule a consultation to understand your needs and recommend the best solutions for your business.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question" onclick={() => activeQuestion = activeQuestion === 2 ? -1 : 2}>
+                <button class="faq-question inline-flex items-center justify-between w-full" onclick={() => activeQuestion = activeQuestion === 2 ? -1 : 2}>
                     <span>What makes Limo different?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class={activeQuestion === 2 ? 'rotate-180' : ''}><path d="m18 15-6-6-6 6"/></svg>
+                    <Icons type="chevron-down" size={16} className={`transition-transform ${activeQuestion === 2 ? 'rotate-180' : ''}`} />
                 </button>
                 <div class="faq-answer" class:active={activeQuestion === 2}>
                     <p>Our innovative approach combines cutting-edge technology with industry expertise. We focus on delivering measurable results, with proven success in reducing costs and improving efficiency for over 500 companies.</p>
