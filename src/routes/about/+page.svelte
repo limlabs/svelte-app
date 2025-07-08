@@ -20,7 +20,7 @@
 	</p>
 
 	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
+		Our services are designed to provide luxury transportation solutions for any occasion.
 		using it with JavaScript disabled!
 	</p>
 </div>
