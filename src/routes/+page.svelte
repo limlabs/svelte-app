@@ -3,7 +3,6 @@
     import type { WhyChooseUsFeature } from '$lib/types';
     import Icons from '$lib/components/ui/Icons.svelte';
 
-    let isHovered = $state(false);
     let activeFeature = $state<number>(0);
     let activeQuestion = $state<number>(-1);
 

@@ -16,10 +16,10 @@
         </slot>
       </p>
       <div class="mt-10 flex gap-x-6">
-        <Button size="lg" onclick={() => window.location.href = '/contact'}>
+        <Button size="lg" on:click={() => window.location.href = '/contact'}>
           Get Started
         </Button>
-        <Button size="lg" variant="outline" onclick={() => window.location.href = '/services'}>
+        <Button size="lg" variant="outline" on:click={() => window.location.href = '/services'}>
           Learn More
         </Button>
       </div>
